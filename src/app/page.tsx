@@ -16,7 +16,7 @@ export default function Home() {
       <h1 className="font-bold text-3xl my-8">Sản Phẩm</h1>
       <div className="flex flex-row justify-between flex-wrap">
         {products.map((product) => (
-          <Link href={`/product/${product.id}`} className="">
+          <Link href={`/product/${product.id}`} className="" key={product.id}>
             <Card className="w-[300px]">
               <CardContent>
                 <Image src={product.image[0]} alt={product.name} />

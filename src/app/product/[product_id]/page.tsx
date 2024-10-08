@@ -26,7 +26,7 @@ const page = ({ params }: { params: { product_id: string } }) => {
       </div>
       <div className="flex flex-col flex-1 gap-8">
         <h1 className="font-bold text-3xl">{product.name}</h1>
-        <p>{product.description}</p>
+        <p className="max-w-[700px]">{product.description}</p>
         <div className="flex flex-row gap-2">
           <label>Số lượng</label>
           <input type="number" className="border rounded-lg" />
