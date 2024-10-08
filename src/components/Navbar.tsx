@@ -2,7 +2,7 @@ import Image from "next/image";
 import Logo from "../../public/logo.png";
 import { HomeClientComponent } from "./homeClientComponent";
 import Link from "next/link";
-import Shopee from "../../public/shopee.png"
+import Shopee from "../../public/shopee.png";
 
 import {
   Tooltip,
@@ -10,6 +10,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { Facebook } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -25,10 +26,18 @@ const Navbar = () => {
               <Image src={Shopee} alt="shopee" className="w-8 h-8" />
             </TooltipTrigger>
             <TooltipContent>
-            <Image src={Shopee} alt="shopee" className="w-32 h-32" />
+              <Image src={Shopee} alt="shopee" className="w-32 h-32" />
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
+
+        <div className="flex justify-center items-center">
+          <Link
+            href={`https://www.facebook.com/share/nU2JzPnQTUTNgwYD/?mibextid=JRoKGi`}
+          >
+            <Facebook className="w-8 h-8 text-[#eeb415]" />
+          </Link>
+        </div>
       </div>
       <HomeClientComponent />
     </nav>
