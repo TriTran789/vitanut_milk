@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { toast } from "sonner";
 
 const page = () => {
   const router = useRouter();
@@ -12,6 +13,7 @@ const page = () => {
     setIsLoading(true);
     setTimeout(() => {
       router.push("/");
+      toast.success("Cập nhật thông tin thành công!");
     }, 1000);
   };
 
