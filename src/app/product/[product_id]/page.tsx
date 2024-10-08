@@ -42,9 +42,16 @@ const page = ({ params }: { params: { product_id: string } }) => {
       <div className="flex flex-col flex-1 gap-8">
         <h1 className="font-bold text-3xl">{product.name}</h1>
         <p className="max-w-[700px]">{product.description}</p>
+        <p>
+          <span className="font-semibold">Giá: </span>350,000 đồng
+        </p>
         <div className="flex flex-row gap-2">
           <label>Số lượng</label>
-          <input type="number" className="border rounded-lg px-4" defaultValue={1} />
+          <input
+            type="number"
+            className="border rounded-lg px-4"
+            defaultValue={1}
+          />
         </div>
         <div className="flex flex-row gap-2 items-center">
           <Checkbox
