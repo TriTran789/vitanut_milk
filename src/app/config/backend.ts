@@ -24,7 +24,7 @@ export const backendConfig = (): TypeInput => {
               signUp: async function (input) {
                 // TODO: some pre sign up logic
 
-                let response = await originalImplementation.signUp(input);
+                const response = await originalImplementation.signUp(input);
 
                 if (
                   response.status === "OK" &&
