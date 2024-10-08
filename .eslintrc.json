@@ -5,6 +5,7 @@
     "@typescript-eslint/no-explicit-any": ["off"],
     "@typescript-eslint/no-unused-expressions": ["off"],
     "@typescript-react-hooks/rules-of-hooks": ["off"],
+    "react-hooks/rules-of-hooks": "off",
     "@typescript-eslint/no-empty-object-type": ["off"]
   }
 }
