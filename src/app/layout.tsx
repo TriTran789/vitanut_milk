@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { SuperTokensProvider } from "@/components/supertokensProvider";
 import Navbar from "@/components/Navbar";
+import { Toaster } from "@/components/ui/sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <SuperTokensProvider>
         <body className={inter.className}>
+          <Toaster richColors visibleToasts={1} theme="light" />
           <Navbar />
           {children}
         </body>

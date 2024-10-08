@@ -1,12 +1,27 @@
 "use client";
 import { products } from "@/app/config/product";
 import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Loader2 } from "lucide-react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { toast } from "sonner";
 
 const page = ({ params }: { params: { product_id: string } }) => {
+  const router = useRouter();
   const product = products[Number(params.product_id)];
   const [curImage, setCurImage] = useState(product.image[0]);
+  const [check, setCheck] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleClickBuy = () => {
+    setIsLoading(true);
+    setTimeout(() => {
+      router.push("/");
+      toast.success("Mua hàng thành công!");
+    }, 1000);
+  };
 
   return (
     <div className="flex flex-row px-16 py-8 gap-8">
@@ -29,10 +44,33 @@ const page = ({ params }: { params: { product_id: string } }) => {
         <p className="max-w-[700px]">{product.description}</p>
         <div className="flex flex-row gap-2">
           <label>Số lượng</label>
-          <input type="number" className="border rounded-lg" />
+          <input type="number" className="border rounded-lg px-4" defaultValue={1} />
+        </div>
+        <div className="flex flex-row gap-2 items-center">
+          <Checkbox
+            defaultChecked={true}
+            onClick={() => setCheck((pre) => !pre)}
+          />
+          <p>Sử dụng địa chỉ mặc định</p>
+        </div>
+        <div className={`${check ? "hidden" : "flex"} flex-col gap-2`}>
+          <div className="flex flex-row gap-2">
+            <label className="min-w-64">Tên</label>
+            <input type="text" className="border rounded-lg" />
+          </div>
+          <div className="flex flex-row gap-2">
+            <label className="min-w-64">Số điện thoại</label>
+            <input type="text" className="border rounded-lg" />
+          </div>
+          <div className="flex flex-row gap-2">
+            <label className="min-w-64">Địa chỉ</label>
+            <input type="text" className="border rounded-lg" />
+          </div>
         </div>
         <div>
-          <Button>Mua Ngay</Button>
+          <Button onClick={handleClickBuy}>
+            {isLoading ? <Loader2 className="animate-spin" /> : <>Mua Ngay</>}
+          </Button>
         </div>
       </div>
     </div>
