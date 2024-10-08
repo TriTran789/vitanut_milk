@@ -28,7 +28,9 @@ export const HomeClientComponent = () => {
   return (
     <div className="flex gap-4 items-center">
       <Button onClick={() => signOut()}>Đăng xuất</Button>
-      <CircleUserRound className="text-[#eeb415] h-8 w-8" />
+      <Link href={`/update-profile`}>
+        <CircleUserRound className="text-[#eeb415] h-8 w-8" />
+      </Link>
     </div>
   );
 };

@@ -19,7 +19,7 @@ export default function Home() {
           <Link href={`/product/${product.id}`} className="" key={product.id}>
             <Card className="w-[300px]">
               <CardContent>
-                <Image src={product.image[0]} alt={product.name} />
+                <Image src={product.image[2]} alt={product.name} />
               </CardContent>
               <CardFooter>
                 <h3>{product.name}</h3>

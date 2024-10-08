@@ -1,5 +1,7 @@
-const page = ({ params }: { params: { super_id: string } }) => {
-  return <div>{params.super_id}</div>;
+const page = () => {
+  return (
+    <div></div>
+  );
 };
 
 export default page;
