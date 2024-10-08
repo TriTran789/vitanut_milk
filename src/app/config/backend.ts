@@ -3,8 +3,6 @@ import EmailPasswordNode from "supertokens-node/recipe/emailpassword";
 import SessionNode from "supertokens-node/recipe/session";
 import { appInfo } from "./appInfo";
 import { TypeInput } from "supertokens-node/types";
-import User from "@/model/User";
-import { redirect } from "next/navigation";
 
 export const backendConfig = (): TypeInput => {
   return {
