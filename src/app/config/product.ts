@@ -12,29 +12,29 @@ export const products = [
   {
     id: 0,
     image: [Product01, Product02, ProductDetail],
-    name: "Product 0",
+    name: "Dâu Ngọt Mơ Màng",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rerum ab architecto voluptate officiis laboriosam, voluptatum adipisci nostrum eveniet harum maxime corporis consequuntur enim voluptas est delectus tempora non quia saepe. Fuga id esse voluptatibus. Excepturi eum distinctio ullam magnam!",
+      "Sữa bột tách kem, hạt bí xanh, hạt điều, hạt dẻ cười, hạt hạnh nhân, hạt óc chó, macca, hạt chia, hạt sen, đậu nành, đậu đen, đậu đỏ, đậu trắng, đậu hà lan, gạo lứt, yến mạch, hương liệu.",
   },
   {
     id: 1,
     image: [Product11, Product12, ProductDetail],
-    name: "Product 1",
+    name: "Dưa Lưới Mộng Tình",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rerum ab architecto voluptate officiis laboriosam, voluptatum adipisci nostrum eveniet harum maxime corporis consequuntur enim voluptas est delectus tempora non quia saepe. Fuga id esse voluptatibus. Excepturi eum distinctio ullam magnam!",
+      "Sữa bột tách kem, hạt bí xanh, hạt điều, hạt dẻ cười, hạt hạnh nhân, hạt óc chó, macca, hạt chia, hạt sen, đậu nành, đậu đen, đậu đỏ, đậu trắng, đậu hà lan, gạo lứt, yến mạch, hương liệu.",
   },
   {
     id: 2,
     image: [Product21, Product22, ProductDetail],
-    name: "Product 2",
+    name: "Vani Thanh Nhẹ",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rerum ab architecto voluptate officiis laboriosam, voluptatum adipisci nostrum eveniet harum maxime corporis consequuntur enim voluptas est delectus tempora non quia saepe. Fuga id esse voluptatibus. Excepturi eum distinctio ullam magnam!",
+      "Sữa bột tách kem, hạt bí xanh, hạt điều, hạt dẻ cười, hạt hạnh nhân, hạt óc chó, macca, hạt chia, hạt sen, đậu nành, đậu đen, đậu đỏ, đậu trắng, đậu hà lan, gạo lứt, yến mạch, hương liệu.",
   },
   {
     id: 3,
     image: [Product31, Product32, ProductDetail],
-    name: "Product 3",
+    name: "Choco Đậm đà",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rerum ab architecto voluptate officiis laboriosam, voluptatum adipisci nostrum eveniet harum maxime corporis consequuntur enim voluptas est delectus tempora non quia saepe. Fuga id esse voluptatibus. Excepturi eum distinctio ullam magnam!",
+      "Sữa bột tách kem, hạt bí xanh, hạt điều, hạt dẻ cười, hạt hạnh nhân, hạt óc chó, macca, hạt chia, hạt sen, đậu nành, đậu đen, đậu đỏ, đậu trắng, đậu hà lan, gạo lứt, yến mạch, hương liệu.",
   },
 ];
