@@ -45,7 +45,7 @@ export const backendConfig = (): TypeInput => {
               signIn: async function (input) {
                 // TODO: some pre sign in logic
 
-                let response = await originalImplementation.signIn(input);
+                const response = await originalImplementation.signIn(input);
 
                 if (response.status === "OK" && input.session === undefined) {
                   // TODO: some post sign in logic
