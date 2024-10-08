@@ -33,7 +33,7 @@ const Navbar = () => {
 
         <div className="flex justify-center items-center">
           <Link
-            href={`https://www.facebook.com/share/nU2JzPnQTUTNgwYD/?mibextid=JRoKGi`}
+            href={`https://www.facebook.com/profile.php?id=61566845345256&mibextid=LQQJ4d`}
           >
             <Facebook className="w-8 h-8 text-[#eeb415]" />
           </Link>
